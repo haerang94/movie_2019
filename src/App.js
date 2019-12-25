@@ -18,7 +18,7 @@ class App extends Component {
       "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
     );
 
-    console.log(movies);
+    //console.log(movies);
     this.setState({ movies, isLoading: false }); //movies하나만 써도 된다. ES6 하나는 배열, 하나는 axios
   };
   componentDidMount() {
@@ -30,7 +30,13 @@ class App extends Component {
       <section className="container">
         {isLoading ? (
           <div className="loader">
-            <span className="loader__text">Loading...</span>
+            <span>L</span>
+            <span>O</span>
+            <span>A</span>
+            <span>D</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
           </div>
         ) : (
           <div className="movies">
